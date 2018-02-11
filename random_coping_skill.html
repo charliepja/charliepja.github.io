@@ -1,0 +1,14 @@
+<p id="skill"></p>
+<script>
+	var list = [
+		 "Random Coping Skill: Play a video game",
+		 "Random Coping Skill: Go for a bath/shower",
+		 "Random Coping Skill: Read a book",
+		 "Random Coping Skill: Talk to someone",
+		 "Random Coping Skill: Listen to music"
+	];
+
+	var rand = list[Math.floor(Math.random() * list.length)];
+
+	document.getElementById("skill").innerHTML = rand;
+</script>

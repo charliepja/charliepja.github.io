@@ -1,0 +1,19 @@
+<p> Have you walked dog/exercised recently? </p>
+<button onclick="myFunction()" id="btn3yes">Yes</button>
+<button onclick="myFunction()" id="btn3no">No</button>
+<p id="exercise"></p>
+	<script>
+		var exercise = document.getElementById("exercise");
+		var btn3yes = document.getElementById("btn3yes");
+		var btn3no = document.getElementById("btn3no");
+
+		btn3yes.onclick = function(){
+			window.location.href = "random_coping_skill.html";
+
+		}
+
+		btn3no.onclick = function(){
+			document.getElementById("exercise").innerHTML = "You should exercise";
+		}
+	</script>
+	

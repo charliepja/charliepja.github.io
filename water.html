@@ -1,0 +1,17 @@
+<p>Have you drank water recently?</p>
+<button onclick="myFunction()" id="btn2yes">Yes</button>
+  	<button onclick="myFunction()" id="btn2no">No</button>
+  	<p id="water"></p>
+  	<script>
+  		var water = document.getElementById("water");
+  		var btn2yes = document.getElementById("btn2yes");
+  		var btn2no = document.getElementById("btn2no");
+
+  		btn2yes.onclick = function(){
+  			window.location.href = "exercise.html";
+  		}
+
+  		btn2no.onclick = function(){
+  			document.getElementById("water").innerHTML = "You should drink water";
+  		}
+  	</script>

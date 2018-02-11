@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Coping Skills</title>
+  </head>
+  <body>
+  <p>Have you eaten in 4 hours?</p>
+  <button onclick="myFunction()" id="btn1yes">Yes</button>
+  <button onclick="myFunction()" id="btn1no">No</button>
+  <p id="eaten"></p>
+  <script>
+  	var eaten = document.getElementById("eaten");
+  	var btn1yes = document.getElementById("btn1yes");
+  	var btn1no = document.getElementById("btn1no");
+
+  	btn1yes.onclick = function(){
+  		window.location.href = "water.html";
+  	}
+
+  	btn1no.onclick = function(){
+  		document.getElementById("eaten").innerHTML = "You should eat";
+  	}
+
+  	</script>
+  	
+  </body>
+</html>
